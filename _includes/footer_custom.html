@@ -25,11 +25,11 @@
 
       document.cookie = "acnh_beginners=" + value + expires + ";path=/";
 
-      alert("acnh cookie - current checkboxes set " + JSON.stringify(readCookie("acnh_beginners")));
+      alert("acnh cookie - current checkboxes set " + JSON.stringify(readCookie()));
   }
 
-  function readCookie(name) {
-      var nameEQ = name + "=";
+  function readCookie() {
+      var nameEQ = "acnh_beginners=";
       var ca = document.cookie.split(';');
       for (var i = 0; i < ca.length; i++) {
           var c = ca[i];
