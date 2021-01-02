@@ -43,12 +43,13 @@
       createCookie(name, "", -1);
   }
 
-  modeSwitcher();
+  //modeSwitcher();
 
   let checkBoxes = readCookie("acnhbeginners");
   if(!checkBoxes) {
-      // foo could get resolved and it's defined
+      alert("acnh cookie - not found");
       createCookie("acnhbeginners", "test", 30);
+      alert("acnh cookie - set ");
   } else {
     alert("acnh cookie - "+checkBoxes);
   }
