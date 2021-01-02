@@ -2,28 +2,54 @@
   <p class="text-small text-grey-dk-100 mb-0">{{ site.footer_content }}</p>
 {%- endif -%}
 <script>
-  let theme = sessionStorage.getItem('theme');
-      function modeSwitcher() {
-      let theme = sessionStorage.getItem('theme');
-      if (theme === "dark") {
-          jtd.setTheme('light');
-          sessionStorage.setItem('theme', 'light');
-          document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-      } else {
-          jtd.setTheme('custom');
-          sessionStorage.setItem('theme', 'dark');
-          document.getElementById("theme-toggle").innerHTML = "Light Mode";
+  //functions
+  //Theme
+  function modeSwitcher() {
+    let theme = sessionStorage.getItem('theme');
+    if (theme === "dark") {
+        jtd.setTheme('light');
+        sessionStorage.setItem('theme', 'light');
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+    } else {
+        jtd.setTheme('custom');
+        sessionStorage.setItem('theme', 'dark');
+        document.getElementById("theme-toggle").innerHTML = "Light Mode";
+    }
+  }
+  //Cookie functions
+  function createCookie(name, value, days) {
+      if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          var expires = "; expires=" + date.toGMTString();
       }
+      else var expires = "";
+
+      document.cookie = name + "=" + value + expires + "; path=/";
+  }
+
+  function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
       }
-      
-      if (theme === "light") {
-      jtd.setTheme('light');
-      sessionStorage.setItem('theme', 'light');
-      document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-      }
-      else {
-      jtd.setTheme('custom');
-      sessionStorage.setItem('theme', 'dark');
-      document.getElementById("theme-toggle").innerHTML = "Light Mode";
-      }
-  </script>
+      return null;
+  }
+
+  function eraseCookie(name) {
+      createCookie(name, "", -1);
+  }
+
+  modeSwitcher();
+
+  let checkBoxes = readCookie("acnhbeginners");
+  if(!checkBoxes) {
+      // foo could get resolved and it's defined
+      createCookie("acnhbeginners", "test", 30);
+  } else {
+    alert("acnh cookie - "+checkBoxes);
+  }
+</script>
