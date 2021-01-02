@@ -22,10 +22,10 @@
 
       let value = readCheckBoxValues();
       value[checkbox.id] = checkbox.checked;
-
-      alert("acnh cookie - setting checkbox"+JSON.stringify(value));
-
+      
       document.cookie = "acnh_beginners=" + value + expires + "; path=/";
+
+      alert("acnh cookie - setting checkbox"+JSON.stringify(readCookie("acnhbeginners")));
   }
 
   function readCookie(name) {
