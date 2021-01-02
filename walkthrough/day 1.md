@@ -151,7 +151,8 @@ You **cannot** rename your island, so be sure it's something you like!
 <div>
   {: .caution }
   <input type="checkbox" checked="yes"/>  
-    <label>Met Timmy and Tommy.</label> <br>
+  <label>Met Timmy and Tommy.</label>
+  <br>
   <input type="checkbox" checked="yes"/>  
     <label>Obtained the recipe for and crafted a <b>Flimsy Net</b> and a <b>Flimsy Fishing Rod</b>.</label> <br>
   <input type="checkbox" checked="yes"/>  
