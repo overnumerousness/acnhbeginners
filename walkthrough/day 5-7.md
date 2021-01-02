@@ -23,17 +23,17 @@ If you have not completed any of this please see [Day 4](https://chibisnorlax.gi
 
 # Completed Objectives:
 <div>
-  <input id="chk-res-services" type="checkbox" checked="yes"/>  
+  <input id="chk-res-services" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Resident Services built</label> <br>
-  <input id="chk-isabelle" type="checkbox" checked="yes"/>
+  <input id="chk-isabelle" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>
     <label>Unlocked Isabelle</label> <br>
-  <input id="chk-campsite" type="checkbox" checked="yes"/>
+  <input id="chk-campsite" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>
     <label>Built Campsite</label> <br>
-  <input id="chk-population" type="checkbox" checked="yes"/>
+  <input id="chk-population" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>
     <label>Island villager population 7-10</label> <br>
-  <input id="chk-bridge" type="checkbox" checked="yes"/>
+  <input id="chk-bridge" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>
     <label>Built a bridge and a ramp</label> <br>
-  <input id="chk-mabel" type="checkbox" checked="yes"/>
+  <input id="chk-mabel" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>
     <label>Met Mabel and Sable</label> <br>
 </div>
 

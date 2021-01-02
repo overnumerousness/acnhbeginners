@@ -53,22 +53,22 @@ Additionally, the **airport** is now open.
 * * *
 # Completed Objectives:
 <div>
-  <input id="chk-cranny" type="checkbox" checked="yes"/>  
+  <input id="chk-cranny" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Activated quest to build Nook's Cranny.</label> <br>
-  <input id="chk-donated-15" type="checkbox" checked="yes"/>  
+  <input id="chk-donated-15" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Donated 15 critters/fossils to Blathers.</label> <br>
-  <input id="chk-shovel" type="checkbox" checked="yes"/>  
+  <input id="chk-shovel" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
   <label>Obtained the <b>Flimsy Shovel</b> and <b>Vaulting Pole</b> DIY recipes.</label> <br>
-  <input id="chk-nmt" type="checkbox" checked="yes"/>  
+  <input id="chk-nmt" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Visited a NMT (mystery tour) island.</label> <br>
 </div>
 
 ## Optional Objectives:
 <div>
-  <input id="chk-invite" type="checkbox">  
+  <input id="chk-invite" type="checkbox" onclick="setCookieForCheckbox(this)"/>  
     <label>Invite a villager to live on your island.</label> <br>
-  <input id="chk-toolring" type="checkbox">  
+  <input id="chk-toolring" type="checkbox" onclick="setCookieForCheckbox(this)" />  
     <label>Purchase the tool ring.</label> <br>
-  <input id="chk-better-tools" type="checkbox">
+  <input id="chk-better-tools" type="checkbox" onclick="setCookieForCheckbox(this)"/>
     <label>Purchase Improved Tool DIY Recipes Pack.</label> <br>
 </div>

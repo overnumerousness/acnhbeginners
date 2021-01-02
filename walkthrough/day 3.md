@@ -38,14 +38,14 @@ If you haven't, please see [Day 2](https://chibisnorlax.github.io/acnhbeginners/
 * * *
 # Completed Objectives:
 <div>
-  <input id="chk-cranny-built" type="checkbox" checked="yes"/>  
+  <input id="chk-cranny-built" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Nook's Cranny quest completed.</label> <br>
 </div>
 
 ## Optional Objectives:
 <div>
-  <input id="chk-more-materials" type="checkbox">
+  <input id="chk-more-materials" type="checkbox" onclick="setCookieForCheckbox(this)"/>
   <label>Harvest even <i>more</i> materials.</label> <br>
-  <input id="chk-more-donate" type="checkbox">
+  <input id="chk-more-donate" type="checkbox" onclick="setCookieForCheckbox(this)"/>
   <label>Collect more artifacts to donate to Blathers once the museum is open tomorrow.</label><br>
 </div>

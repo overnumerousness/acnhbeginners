@@ -149,26 +149,26 @@ You **cannot** rename your island, so be sure it's something you like!
 
 # Completed Objectives:
 <div>
-  <input id="chk-timtom" type="checkbox" checked="yes"/>  
+  <input id="chk-timtom" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
   <label>Met Timmy and Tommy.</label>
   <br>
-  <input id="chk-recipe" type="checkbox" checked="yes"/>  
+  <input id="chk-recipe" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Obtained the recipe for and crafted a <b>Flimsy Net</b> and a <b>Flimsy Fishing Rod</b>.</label> <br>
-  <input id="chk-donated" type="checkbox" checked="yes"/>  
+  <input id="chk-donated" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Collected and donated <b>5 unique critters</b>.</label> <br>
-  <input id="chk-blathers" type="checkbox" checked="yes"/>  
+  <input id="chk-blathers" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Set up Blathers' museum tent.</label> <br>
-  <input id="chk-axe-can" type="checkbox" checked="yes"/>  
+  <input id="chk-axe-can" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Obtained the <b>Flimsy Axe</b> and the <b>Flimsy Watering Can</b> DIY recipes.</label> <br>
-  <input id="chk-paymiles" type="checkbox" checked="yes"/>  
+  <input id="chk-paymiles" type="checkbox" checked="yes" onclick="setCookieForCheckbox(this)"/>  
     <label>Paid off your <b>5,000 Nook Miles</b> loan.</label> <br>
 </div>
 
 ## Optional Objectives:
 <div>
-  <input id="chk-materials" type="checkbox">  
+  <input id="chk-materials" type="checkbox" onclick="setCookieForCheckbox(this)">  
     <label>Collect materials for Nook's Cranny.</label> <br>
-  <input id="chk-bugfish" type="checkbox">  
+  <input id="chk-bugfish" type="checkbox" onclick="setCookieForCheckbox(this)">  
     <label>Collect bugs and fish for Blathers.</label> <br>
 </div>
 

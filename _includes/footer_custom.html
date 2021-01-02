@@ -15,7 +15,7 @@
     }
   }
 
-  function createCookie(checkbox) {
+  function setCookieForCheckbox(checkbox) {
       var date = new Date();
       date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
       var expires = "; expires=" + date.toGMTString();
@@ -53,7 +53,7 @@
 
   let currentCheckBoxes = readCookie("acnhbeginners");
   if(currentCheckBoxes) {
-    alert("acnh cookie - "+currentCheckBoxes);
+    alert("acnh cookie - "+JSON.stringify(currentCheckBoxes));
   }
 
 </script>
