@@ -150,6 +150,7 @@ You **cannot** rename your island, so be sure it's something you like!
 # Completed Objectives:
 <div>
   {: .chk_nmt }
+  Test
   <input type="checkbox" checked="yes"/>  
     <label>Met Timmy and Tommy.</label> <br>
   <input type="checkbox" checked="yes"/>  
