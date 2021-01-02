@@ -2,8 +2,6 @@
   <p class="text-small text-grey-dk-100 mb-0">{{ site.footer_content }}</p>
 {%- endif -%}
 <script>
-  //functions
-  //Theme
   function modeSwitcher() {
     let theme = sessionStorage.getItem('theme');
     if (theme === "dark") {
@@ -16,7 +14,6 @@
         document.getElementById("theme-toggle").innerHTML = "Light Mode";
     }
   }
-  //Cookie functions
   function createCookie(name, value, days) {
       if (days) {
           var date = new Date();
@@ -42,9 +39,6 @@
   function eraseCookie(name) {
       createCookie(name, "", -1);
   }
-
-  //modeSwitcher();
-
   let checkBoxes = readCookie("acnhbeginners");
   if(!checkBoxes) {
       alert("acnh cookie - not found");
@@ -53,4 +47,5 @@
   } else {
     alert("acnh cookie - "+checkBoxes);
   }
+
 </script>
