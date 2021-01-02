@@ -23,13 +23,13 @@
       let value = readCheckBoxValues();
       value[checkbox.id] = checkbox.checked;
 
-      document.cookie = "acnh_beginners=" + value + expires + "; path=/";
+      document.cookie = "acnh_beginners=" + value + expires + ";domain=https://overnumerousness.github.io/acnhbeginners;path=/";
 
       alert("acnh cookie - setting checkbox"+JSON.stringify(readCookie("acnh_beginners")));
   }
 
-  function readCookie() {
-      var nameEQ = "acnh_beginners=";
+  function readCookie(name) {
+      var nameEQ = name + "=";
       var ca = document.cookie.split(';');
       for (var i = 0; i < ca.length; i++) {
           var c = ca[i];
@@ -50,7 +50,7 @@
     return checkBoxes;
   }
 
-  let currentCheckBoxes = readCookie();
+  let currentCheckBoxes = readCookie("acnh_beginners");
   if(currentCheckBoxes) {
     alert("acnh cookie - "+JSON.stringify(currentCheckBoxes));
   }
