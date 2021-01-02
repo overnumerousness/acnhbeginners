@@ -149,26 +149,26 @@ You **cannot** rename your island, so be sure it's something you like!
 
 # Completed Objectives:
 <div>
-  <input id="chk_nmt" type="checkbox" checked="yes"/>  
+  <input id="chk-timtom" type="checkbox" checked="yes"/>  
   <label>Met Timmy and Tommy.</label>
   <br>
-  <input type="checkbox" checked="yes"/>  
+  <input id="chk-recipe" type="checkbox" checked="yes"/>  
     <label>Obtained the recipe for and crafted a <b>Flimsy Net</b> and a <b>Flimsy Fishing Rod</b>.</label> <br>
-  <input type="checkbox" checked="yes"/>  
+  <input id="chk-donated" type="checkbox" checked="yes"/>  
     <label>Collected and donated <b>5 unique critters</b>.</label> <br>
-  <input type="checkbox" checked="yes"/>  
+  <input id="chk-blathers" type="checkbox" checked="yes"/>  
     <label>Set up Blathers' museum tent.</label> <br>
-  <input type="checkbox" checked="yes"/>  
+  <input id="chk-axe-can" type="checkbox" checked="yes"/>  
     <label>Obtained the <b>Flimsy Axe</b> and the <b>Flimsy Watering Can</b> DIY recipes.</label> <br>
-  <input type="checkbox" checked="yes"/>  
+  <input id="chk-paymiles" type="checkbox" checked="yes"/>  
     <label>Paid off your <b>5,000 Nook Miles</b> loan.</label> <br>
 </div>
 
 ## Optional Objectives:
 <div>
-  <input type="checkbox">  
+  <input id="chk-materials" type="checkbox">  
     <label>Collect materials for Nook's Cranny.</label> <br>
-  <input type="checkbox">  
+  <input id="chk-bugfish" type="checkbox">  
     <label>Collect bugs and fish for Blathers.</label> <br>
 </div>
 

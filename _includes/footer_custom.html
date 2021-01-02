@@ -14,15 +14,15 @@
         document.getElementById("theme-toggle").innerHTML = "Light Mode";
     }
   }
-  function createCookie(name, value, days) {
-      if (days) {
-          var date = new Date();
-          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-          var expires = "; expires=" + date.toGMTString();
-      }
-      else var expires = "";
 
-      document.cookie = name + "=" + value + expires + "; path=/";
+  function createCookie(checkbox) {
+      var date = new Date();
+      date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+      var expires = "; expires=" + date.toGMTString();
+
+      let value = readCheckBoxValues();
+      value[checkbox.name] = checkbox.checked;
+      document.cookie = "acnh_beginners=" + value + expires + "; path=/";
   }
 
   function readCookie(name) {
@@ -36,16 +36,24 @@
       return null;
   }
 
-  function eraseCookie(name) {
-      createCookie(name, "", -1);
+  function readCheckBoxValues() {
+    let checkBoxes = {};
+    var inputs = document.getElementsByTagName("input");
+    for(var i = 0; i < inputs.length; i++) {
+      if(inputs[i].name.indexOf('chk-') == 0) {
+          checkBoxes[inputs[i].name] = inputs[i].checked;
+      }
+    }
+    return checkBoxes;
   }
-  let checkBoxes = readCookie("acnhbeginners");
-  if(!checkBoxes) {
-      alert("acnh cookie - not found");
-      createCookie("acnhbeginners", "test", 30);
-      alert("acnh cookie - set ");
-  } else {
-    alert("acnh cookie - "+checkBoxes);
+
+  function setCheckBoxValues(values) {
+
+  }
+
+  let currentCheckBoxes = readCookie("acnhbeginners");
+  if(currentCheckBoxes) {
+    alert("acnh cookie - "+currentCheckBoxes);
   }
 
 </script>
