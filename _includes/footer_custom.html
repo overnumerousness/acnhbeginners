@@ -25,9 +25,7 @@
 
       document.cookie = "acnh_beginners=" + JSON.stringify(value) + expires + ";path=/";
 
-      alert("acnh cookie - current checkboxes value being set " + readCookie());
-
-      alert("acnh cookie - "+JSON.stringify(readCookie()));
+      alert("acnh cookie current value - "+JSON.stringify(readCookie()));
   }
 
   function readCookie() {
@@ -54,7 +52,7 @@
 
   let currentCheckBoxes = readCookie("acnh_beginners");
   if(currentCheckBoxes) {
-    alert("acnh cookie - "+JSON.stringify(currentCheckBoxes));
+    alert("acnh cookie current value - "+JSON.stringify(currentCheckBoxes));
   }
 
 </script>
