@@ -21,7 +21,7 @@
       var expires = "; expires=" + date.toGMTString();
 
       let value = readCheckBoxValues();
-      value[checkbox.name] = checkbox.checked;
+      value[checkbox.id] = checkbox.checked;
 
       alert("acnh cookie - setting checkbox"+JSON.stringify(value));
 
@@ -43,8 +43,8 @@
     let checkBoxes = {};
     var inputs = document.getElementsByTagName("input");
     for(var i = 0; i < inputs.length; i++) {
-      if(inputs[i].name.indexOf('chk-') == 0) {
-          checkBoxes[inputs[i].name] = inputs[i].checked;
+      if(inputs[i].id.indexOf('chk-') == 0) {
+          checkBoxes[inputs[i].id] = inputs[i].checked;
       }
     }
     return checkBoxes;
